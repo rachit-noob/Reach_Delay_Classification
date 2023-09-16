@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Prediction</title>
+    <link rel="stylesheet" href="style.css"> <!-- Include your style.css file here -->
+</head>
+<body>
+    <h1>Machine Learning Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="customer_care_calls">Customer Care Calls:</label>
+        <input type="number" id="customer_care_calls" name="customer_care_calls" required><br><br>
+
+        <label for="customer_rating">Customer Rating:</label>
+        <input type="number" id="customer_rating" name="customer_rating" required><br><br>
+
+        <label for="cost_of_the_product">Cost of the Product:</label>
+        <input type="number" step="0.01" id="cost_of_the_product" name="cost_of_the_product" required><br><br>
+
+        <label for="prior_purchases">Prior Purchases:</label>
+        <input type="number" id="prior_purchases" name="prior_purchases" required><br><br>
+
+        <label for="product_importance">Product Importance:</label>
+        <input type="number" id="product_importance" name="product_importance" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+        </select><br><br>
+
+        <label for="discount_offered">Discount Offered:</label>
+        <input type="number" step="0.01" id="discount_offered" name="discount_offered" required><br><br>
+
+        <label for="weight_in_gms">Weight in grams:</label>
+        <input type="number" step="0.01" id="weight_in_gms" name="weight_in_gms" required><br><br>
+
+        <label for="warehouse_block_A">Warehouse Block A:</label>
+        <input type="number" id="warehouse_block_A" name="warehouse_block_A" required><br><br>
+
+        <label for="warehouse_block_B">Warehouse Block B:</label>
+        <input type="number" id="warehouse_block_B" name="warehouse_block_B" required><br><br>
+
+        <label for="warehouse_block_C">Warehouse Block C:</label>
+        <input type="number" id="warehouse_block_C" name="warehouse_block_C" required><br><br>
+
+        <label for="warehouse_block_D">Warehouse Block D:</label>
+        <input type="number" id="warehouse_block_D" name="warehouse_block_D" required><br><br>
+
+        <label for="mode_of_shipment_flight">Mode of Shipment Flight:</label>
+        <input type="number" id="mode_of_shipment_flight" name="mode_of_shipment_flight" required><br><br>
+
+        <label for="mode_of_shipment_road">Mode of Shipment Road:</label>
+        <input type="number" id="mode_of_shipment_road" name="mode_of_shipment_road" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
