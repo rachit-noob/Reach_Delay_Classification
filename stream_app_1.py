@@ -11,7 +11,7 @@ try:
     pipeline2 = joblib.load('Pickle_file/logistic_regression_model.pkl')
     pipeline3 = joblib.load('Pickle_file/random_forest_model.pkl')
 except Exception as e:
-    print(f"Error loading the model or dataset: {str(e)}")
+    st.error(f"Error loading the model or dataset: {str(e)}")
 
 # Define a Streamlit app
 st.title('Machine Learning Prediction')
@@ -84,9 +84,9 @@ try:
                   zero += 1
         
         if zero < 2 : 
-            print('Product Reached With Delay')
+                st.write('Product Reached With Delay')
         else:
-            print('Product Reached on Time')
-except Exception as e:
-        # Handle any errors gracefully and display an error message
-        print(f"Error making predictions: {str(e)}")
+                st.write('Product Reached on Time')
+except ValueError as e:
+            # Handle prediction-related errors gracefully and display an error message
+            st.error(f"Error making predictions: {str(e)}")
