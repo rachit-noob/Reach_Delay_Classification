@@ -71,7 +71,7 @@ if st.button('Predict'):
             'Mode_of_Shipment_Road': [shipment_encoded[1]]
         })
 
-try:
+    try:
         # Use the loaded model to make predictions
         predictions = []
         predictions.append(pipeline1.predict(input_data))
@@ -87,6 +87,6 @@ try:
                 st.write('Product Reached With Delay')
         else:
                 st.write('Product Reached on Time')
-except ValueError as e:
+    except ValueError as e:
             # Handle prediction-related errors gracefully and display an error message
             st.error(f"Error making predictions: {str(e)}")
