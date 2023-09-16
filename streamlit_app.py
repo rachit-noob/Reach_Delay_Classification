@@ -14,7 +14,7 @@ except Exception as e:
     st.error(f"Error loading the model or dataset: {str(e)}")
 
 # Define a Streamlit app
-st.title('Machine Learning Prediction')
+st.title('Product Reaching on Time/ Delay Classification')
 
 # Define input fields for prediction
 customer_care_calls = st.number_input('Customer Care Calls', min_value=0)
