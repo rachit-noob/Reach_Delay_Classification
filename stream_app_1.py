@@ -7,9 +7,9 @@ import tensorflow as tf
 from tensorflow.keras.models import model_from_json
 
 try:
-    pipeline1 = joblib.load('../Pickle_file/decision_tree_model.pkl')  
-    pipeline2 = joblib.load('../Pickle_file/logistic_regression_model.pkl')
-    pipeline3 = joblib.load('../Pickle_file/random_forest_model.pkl')
+    pipeline1 = joblib.load('Pickle_file/decision_tree_model.pkl')  
+    pipeline2 = joblib.load('Pickle_file/logistic_regression_model.pkl')
+    pipeline3 = joblib.load('Pickle_file/random_forest_model.pkl')
 except Exception as e:
     print(f"Error loading the model or dataset: {str(e)}")
 
