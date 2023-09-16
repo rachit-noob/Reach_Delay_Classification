@@ -78,13 +78,12 @@ try:
         predictions.append(pipeline2.predict(input_data))
         predictions.append(pipeline3.predict(input_data))
 
-        unique_numbers, counts = np.unique(predictions, return_counts=True)
-        mode_index = np.argmax(counts)
-        modes = unique_numbers[counts == counts[mode_index]]
+        zero = 0
+        for val in predictions[0]:
+             if val == 0:
+                  zero += 1
         
-
-
-        if modes[0] == 1:
+        if zero < 2 : 
             print('Product Reached With Delay')
         else:
             print('Product Reached on Time')
