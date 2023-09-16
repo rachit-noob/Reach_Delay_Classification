@@ -84,9 +84,9 @@ if st.button('Predict'):
                   zero += 1
         
         if zero < 2 : 
-                st.write('Product Reached With Delay')
+                st.write('Product reached with Delay')
         else:
-                st.write('Product Reached on Time')
+                st.write('Product reached on Time')
     except ValueError as e:
             # Handle prediction-related errors gracefully and display an error message
             st.error(f"Error making predictions: {str(e)}")
