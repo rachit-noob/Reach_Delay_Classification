@@ -84,7 +84,7 @@ try:
         
 
 
-        if modes == 1:
+        if modes[0] == 1:
             print('Product Reached With Delay')
         else:
             print('Product Reached on Time')
