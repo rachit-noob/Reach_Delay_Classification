@@ -46,11 +46,11 @@ if st.button('Predict'):
         customer_care_calls < 0
         or customer_rating < 1
         or customer_rating > 5
-        or cost_of_the_product <= 0.0
+        or cost_of_the_product < 0.0
         or prior_purchases < 0
         or product_importance not in ['low', 'medium', 'high']
         or discount_offered < 0.0
-        or weight_in_gms <= 0.0
+        or weight_in_gms < 0.0
     ):
         st.warning("Please fill in all required fields.")
     else:
